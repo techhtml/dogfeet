@@ -1,0 +1,247 @@
+/* 
+ * reset.css
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*
+ * layout.css
+ */
+header {
+    position:absolute;
+    top:0;
+    width:100%;
+    overflow:hidden;
+    font-size:20px;
+    background:rgba(0,0,0,0.6);
+    z-index:10;
+}
+header .gh-content {
+    width:960px;
+    margin:0 auto;
+}
+header h1 {
+    /* height: 1em; */
+    /* header의 font-size : 18px */
+    /* 1em === header의 font-size */
+    /* 1em === 18px */
+    float: left;
+    /* 왼쪽 or 오른쪽으로 달라붙게 하는거 */
+    /* float : left, right */
+    margin:0 0.5em;
+}
+header ul, header li {
+    float: left;    
+}
+header li a, header h1 a {
+    display: block;
+    margin: 0 0.5em;
+    padding: 0.5em;
+    font-size: 0.8em;
+    color:#fff;
+    text-decoration:none;
+    transition:0.5s all;
+}
+header h1 a {
+    width:19px;
+    padding:1em 0;
+    background:url(apple.svg) center center no-repeat;
+    background-size:15px 19px;
+    text-indent:-9999px;
+}
+header li {
+    padding:0.5em 1em 0.3em;    
+}
+header li a:hover {
+    color:rgba(180,180,180,0.8);
+}
+.sc-ipad {
+
+}
+.sc-ipad figure {
+    position:relative;    
+    font-size:20px;
+}
+.sc-ipad > figure img {
+    width: 100%;
+}
+.sc-ipad > figure figcaption {
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    background:url(./header_make_music_large.png) center center no-repeat;
+    background-size: 30.688888em 9.1em;
+    text-indent:-9999px;
+}
+.sc-ipad section {
+    text-align:center;    
+}
+.sc-ipad section > h1 {
+    font-size:2.5em;
+    line-height:1.2em;
+    margin:0.8em 0;
+    font-weight:100;
+    color:#222;
+}
+.sc-ipad section > p {
+    font-size:1.3em;    
+    line-height:1.5em;
+    font-weight:100;
+    margin:1em 0;
+}
+.sc-ipad .img-wrap {
+    margin:3em 1em;
+}
+.sc-ipad .img-wrap ul {
+    overflow:hidden;
+}
+.sc-ipad .img-wrap ul li {
+    float:left;
+    width:23%;
+    margin:0 1%;
+}
+.sc-ipad .img-wrap figure {}
+.sc-ipad .img-wrap figure figcaption {
+    font-size:16px;
+}
+.sc-ipad .img-wrap figure figcaption strong {
+    display:block;
+    font-size:0.9em;
+    font-weight:600;
+    margin:1em 0;
+}
+.sc-ipad .img-wrap figure figcaption p {
+    font-size:0.9em;
+    line-height:1.4em;
+    font-weight:200;
+}
+
+.app-list {
+    background:#efefef;
+    padding:0 3em;
+}
+.app-list .app-list-item {
+    padding:3em 0;
+    border-top:1px solid #b2b2b2;
+    overflow:hidden;
+}
+.app-list .app-list-item:first-child {
+    border-top:0
+}
+.app-list .big-figure { }
+.app-list .big-figure img {
+    float:right;
+}
+.app-list .big-figure figcaption {
+    overflow:hidden;
+    text-align:left;
+}
+.app-list .big-figure strong {
+    font-size:1.5em;    
+    font-weight:200;
+}
+.app-list .big-figure p {
+    font-size:0.6em;    
+    line-height:1.5em;
+    font-weight:300;
+    margin:1em 0;
+}
+.app-list .rec-app-list { }
+.app-list .rec-app-list li {
+    margin:1em 0;    
+}
+.app-list .rec-app-list figure{
+    text-align:left;
+}
+.app-list .rec-app-list figure img{
+    float:left;
+    margin-right:0.7em;
+}
+.app-list .rec-app-list figure figcaption{
+    overflow:hidden;
+}
+.app-list .rec-app-list figure strong{
+    display:block;
+    margin-bottom:2px;
+    font-weight:200;
+}
+.app-list .rec-app-list figure a{
+    font-size:0.7em;
+    color:rgba(50,60,176,1);    
+    text-decoration:none;
+}
+.app-list .rec-app-list figure a:hover {
+    text-decoration:underline;
+}
+
+@media (max-width:900px) {
+    .sc-ipad .img-wrap ul li {
+        width:38%;
+        margin:3em 6%;
+    }
+    .app-list .app-list-item {
+        float:left;
+        width:40%;
+        margin:0 7.5%;
+        border:none;
+    }
+    .app-list .app-list-item:nth-child(odd) {
+        margin-right:2.5%;
+    }
+    .app-list .app-list-item:nth-child(even) {
+        margin-left:2.5%;
+    }
+    .app-list .app-list-item .big-figure img {
+        float:none;
+        width:100%;
+    }
+    .app-list .app-list-item .big-figure figcaption strong {
+        display:block;
+        font-size:1.3em;    
+        font-weight:100;
+        margin:0.8em 0;
+    }
+}

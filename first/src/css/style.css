@@ -1,0 +1,27 @@
+@charset "UTF-8";
+body {
+  line-height: 180%;
+  font-size: 24px;
+  font-family: Helvetica NEUE, APPLE SD Gothic NEO, Dotum, "돋움", sans-serif; }
+
+h1 {
+  font-weight: 300; }
+  h1 time {
+    font-size: 0.5em; }
+
+h2 {
+  font-weight: 100; }
+
+/*
+<div>
+    <div>
+        <div>
+            <div>
+                <h1></h1>
+            </div>
+        </div>
+    </div>
+</div>
+*/
+
+/*# sourceMappingURL=style.css.map */
