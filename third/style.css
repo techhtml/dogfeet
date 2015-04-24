@@ -1,0 +1,138 @@
+p {
+    margin:0;
+}
+body {
+    margin:0;
+    font-family:Helvetica NEUE, Hiragino Kaku Gothic ProN, APPLE SD Gothic NEO, sans-serif;
+}
+.panel {
+    position:relative;
+    float:left;
+    width:50%;
+    padding-top:30%;
+    background:#3f3f41;
+}
+.panel .panel-content {
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+}
+.panel-x2 {
+    width:100%
+}
+.panel-wrap {
+    background:#c2fffe;
+}
+.panel-wrap .panel-content {
+    padding:20px;
+}
+.panel-wrap a {
+    color:#333;
+    text-decoration:none;
+    font-size:12px;
+    letter-spacing:1px
+}
+.panel-wrap strong {
+    font-weight:500;
+}
+.panel-wrap p {
+    color:#999;
+}
+.panel-work a,
+.panel-text a {
+    display:block;
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+}
+.panel-text,
+.panel-text a,
+.panel-text span,
+.panel-text span::after {
+    transition:0.2s all ease;
+}
+.panel-work,
+.panel-work .panel-work-header,
+.panel-work span::after {
+    transition:0.5s all ease;
+}
+.panel-work {}
+.panel-work a {
+    color:#fff;
+    text-decoration:none;
+    font-size:12px;
+}
+.panel-work span {
+    display:block;
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    background-size:cover;
+    background-position:center center;
+}
+.panel-work span::after {
+    content:'';
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    background:rgba(66,66,66,0.9);
+}
+.panel-work .panel-work-header {
+    position:relative;
+    padding:20px;
+    z-index:10; 
+}
+.panel-work .panel-work-header p {
+    color:#777;
+    margin-top:4px;
+}
+.panel-work:hover .panel-work-header {
+    background:rgba(255,255,255,1);
+    box-shadow:1px 1px 3px rgba(0,0,0,0.2);
+}
+.panel-work:hover a {
+    color:#000;
+}
+.panel-work:hover span::after {
+    opacity:0;
+}
+.panel-text {}
+.panel-text a {
+    padding:20px;
+    color:#b8f1f1;
+    text-decoration:none;
+    font-weight:100;
+    font-size:18px;
+    line-height:220%;
+}
+.panel-text span {
+    position:absolute;
+    left:20px;
+    bottom:20px;
+    color:gray;
+    font-size:12px;
+    line-height:150%;
+}
+.panel-text span::after {
+    content:"Go to Page";
+    opacity:0;
+}
+.panel-text:hover {
+    background:#323232;
+}
+.panel-text:hover a,
+.panel-text:hover span{
+    color:#fff
+}
+.panel-text:hover span::after {
+    opacity:1;
+    color:#b8f1f1;
+}
